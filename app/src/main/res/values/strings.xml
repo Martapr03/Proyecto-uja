@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">ProyectoUJA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="TextInicio">¡Participa en tu clase y lleva tu aprendizaje al siguiente nivel!</string>
+    <string name="Continuar">Continuar</string>
+
+    <string name="Bienvenido">¡Bienvenido!</string>
+    <string name="Rol">Selecciona tu rol</string>
+    <string name="Profesor">Soy Profesor</string>
+    <string name="Alumno">Soy Alumno</string>
+    <string name="IniciarSesion">Iniciar sesión</string>
+
+
+    <string name="Correo1">Correo electrónico *</string>
+    <string name="Correo2">correo electrónico</string>
+    <string name="Contrasena1">Contraseña *</string>
+    <string name="Contrasena2">contraseña</string>
+
+
+    <string name="ContrasenaOlvidada">¿Has olvidado tu contraseña?</string>
+    <string name="IntroduceCorreo">Introduce tu correo</string>
+
+    <string name="VerificaCódigo">Verifica el código</string>
+    <string name="Subtitulo">Introduce a continuación el código de verificación que hemos enviado a correo</string>
+    <string name="Codigo">Código *</string>
+    <string name="Codigo2">código</string>
+    <string name="Verificar">Verificar</string>
+
+    <string name="NuevaContrasena">Nueva contraseña</string>
+    <string name="IntroduceContrasena">Introduce una nueva contraseña</string>
+    <string name="ConfirmarContrasena">Confirmar contraseña *</string>
+    <string name="ConfirmarContrasena2">confirmar contraseña</string>
+    <string name="Actualizar">Actualizar</string>
+
+    <string name="Nombre">Nombre *</string>
+    <string name="Nombre2">nombre</string>
+    <string name="RecuerdoDatos">No gracias, ya recuerdo mis datos</string>
+
+    <string name="CrearQR">Crear QR</string>
+    <string name="Generar">Generar</string>
+    <string name="LeerQR">Leer QR</string>
+    <string name="Cerrar">Cerrar</string>
+
+    <string name="SeleccionaActividad">Selecciona actividad</string>
+    <string name="ZonaEntrenamiento">Captura de Pokémon en la Zona de Entrenamiento</string>
+    <string name="Combate">Combate en el Gimnasio Pokémon</string>
+    <string name="Expedición">Expedición a la Cueva de los Misterios</string>
+    <string name="Competencia">Competencia de la Liga Pokémon</string>
+
+    <string name="SeleccionarInsignia">Seleccionar insignia</string>
+    <string name="puntos">Puntos</string>
+
+</resources>

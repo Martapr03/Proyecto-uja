@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "37638186273",
+    "project_id": "proyecto-uja",
+    "storage_bucket": "proyecto-uja.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37638186273:android:b467f23961cde04ececa60",
+        "android_client_info": {
+          "package_name": "com.example.proyectouja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQx2UcsM6-uyuh5DJbnU-uSJsZtLbKC4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

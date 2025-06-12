@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ajustesFragment">
+
+    <fragment
+        android:id="@+id/pantallaCargaFragment"
+        android:name="com.example.proyectouja.PantallaCargaFragment"
+        android:label="fragment_pantalla_carga"
+        tools:layout="@layout/fragment_pantalla_carga">
+        <action
+            android:id="@+id/action_pantallaCargaFragment_to_inicioFragment2"
+            app:destination="@id/inicioFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inicioFragment2"
+        android:name="com.example.proyectouja.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_inicioFragment2_to_rolFragment"
+            app:destination="@id/rolFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rolFragment"
+        android:name="com.example.proyectouja.RolFragment"
+        android:label="fragment_rol"
+        tools:layout="@layout/fragment_rol">
+        <action
+            android:id="@+id/action_rolFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inicioSesionFragment"
+        android:name="com.example.proyectouja.InicioSesionFragment"
+        android:label="fragment_inicio_sesion"
+        tools:layout="@layout/fragment_inicio_sesion">
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_rolFragment"
+            app:destination="@id/rolFragment" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_registrarseFragment"
+            app:destination="@id/registrarseFragment" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_contrasenaOlvidadaFragment"
+            app:destination="@id/contrasenaOlvidadaFragment" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_pantallaPrincipalAlumnoFragment"
+            app:destination="@id/pantallaPrincipalAlumnoFragment" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_pantallaPrincipalProfesorFragment"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrarseFragment"
+        android:name="com.example.proyectouja.RegistrarseFragment"
+        android:label="fragment_registrarse"
+        tools:layout="@layout/fragment_registrarse">
+        <action
+            android:id="@+id/action_registrarseFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contrasenaOlvidadaFragment"
+        android:name="com.example.proyectouja.ContrasenaOlvidadaFragment"
+        android:label="fragment_contrasena_olvidada"
+        tools:layout="@layout/fragment_contrasena_olvidada">
+        <action
+            android:id="@+id/action_contrasenaOlvidadaFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/seleccionarActividadFragment"
+        android:name="com.example.proyectouja.SeleccionarActividadFragment"
+        android:label="fragment_seleccionar_actividad"
+        tools:layout="@layout/fragment_seleccionar_actividad">
+        <action
+            android:id="@+id/action_seleccionarActividadFragment_to_seleccionarInsigniaFragment"
+            app:destination="@id/seleccionarInsigniaFragment" />
+        <action
+            android:id="@+id/action_seleccionarActividadFragment_to_pantallaPrincipalProfesorFragment"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaAlumnosAsignarFragment"
+        android:name="com.example.proyectouja.ListaAlumnosAsignarFragment"
+        android:label="fragment_lista_alumnos_asignar"
+        tools:layout="@layout/fragment_lista_alumnos_asignar">
+        <action
+            android:id="@+id/action_listaAlumnosAsignarFragment_to_seleccionarAlumnoFragment"
+            app:destination="@id/seleccionarAlumnoFragment" />
+        <action
+            android:id="@+id/action_listaAlumnosAsignarFragment_to_crearQrFragment"
+            app:destination="@id/crearQrFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaAlumnosQuitarFragment"
+        android:name="com.example.proyectouja.ListaAlumnosQuitarFragment"
+        android:label="fragment_lista_alumnos_quitar"
+        tools:layout="@layout/fragment_lista_alumnos_quitar" >
+        <action
+            android:id="@+id/action_listaAlumnosQuitarFragment_to_seleccionarAlumnoFragment"
+            app:destination="@id/seleccionarAlumnoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/buscarAlumnoFragment"
+        android:name="com.example.proyectouja.BuscarAlumnoFragment"
+        android:label="fragment_buscar_alumno"
+        tools:layout="@layout/fragment_buscar_alumno">
+        <action
+            android:id="@+id/action_buscarAlumnoFragment_to_pantallaPrincipalProfesorFragment"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+        <action
+            android:id="@+id/action_buscarAlumnoFragment_to_visualizarPerfilAlumnoFragment"
+            app:destination="@id/visualizarPerfilAlumnoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/leerQrFragment"
+        android:name="com.example.proyectouja.LeerQrFragment"
+        android:label="fragment_leer_qr"
+        tools:layout="@layout/fragment_leer_qr">
+        <action
+            android:id="@+id/action_leerQRFragment_to_pantallaPrincipalAlumnoFragment"
+            app:destination="@id/pantallaPrincipalAlumnoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.proyectouja.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking">
+        <action
+            android:id="@+id/action_rankingFragment_to_pantallaPrincipalAlumnoFragment"
+            app:destination="@id/pantallaPrincipalAlumnoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rankingProfesorFragment"
+        android:name="com.example.proyectouja.RankingProfesorFragment"
+        android:label="fragment_ranking_profesor"
+        tools:layout="@layout/fragment_ranking_profesor">
+        <action
+            android:id="@+id/action_rankingProfesorFragment_to_pantallaPrincipalProfesorFragment"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/visualizarPerfilAlumnoFragment"
+        android:name="com.example.proyectouja.VisualizarPerfilAlumnoFragment"
+        android:label="fragment_visualizar_perfil_alumno"
+        tools:layout="@layout/fragment_visualizar_perfil_alumno">
+        <action
+            android:id="@+id/action_visualizarPerfilAlumnoFragment_to_pantallaPrincipalAlumnoFragment"
+            app:destination="@id/pantallaPrincipalAlumnoFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/pantallaPrincipalProfesorFragment"
+        android:name="com.example.proyectouja.PantallaPrincipalProfesorFragment"
+        android:label="fragment_pantalla_principal_profesor"
+        tools:layout="@layout/fragment_pantalla_principal_profesor" >
+        <action
+            android:id="@+id/action_pantallaPrincipalProfesorFragment_to_perfilProfesorFragment2"
+            app:destination="@id/perfilProfesorFragment2" />
+        <action
+            android:id="@+id/action_pantallaPrincipalProfesorFragment_to_seleccionarActividadFragment"
+            app:destination="@id/seleccionarActividadFragment" />
+        <action
+            android:id="@+id/action_pantallaPrincipalProfesorFragment_to_rankingProfesorFragment"
+            app:destination="@id/rankingProfesorFragment" />
+        <action
+            android:id="@+id/action_pantallaPrincipalProfesorFragment_to_buscarAlumnoFragment"
+            app:destination="@id/buscarAlumnoFragment" />
+        <action
+            android:id="@+id/action_pantallaPrincipalProfesorFragment_to_ajustesFragment"
+            app:destination="@id/ajustesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/perfilProfesorFragment2"
+        android:name="com.example.proyectouja.PerfilProfesorFragment"
+        android:label="fragment_perfil_profesor"
+        tools:layout="@layout/fragment_perfil_profesor" >
+        <action
+            android:id="@+id/action_perfilProfesorFragment2_to_pantallaPrincipalProfesorFragment"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seleccionarInsigniaFragment"
+        android:name="com.example.proyectouja.SeleccionarInsigniaFragment"
+        android:label="fragment_seleccionar_insignia"
+        tools:layout="@layout/fragment_seleccionar_insignia" >
+        <action
+            android:id="@+id/action_seleccionarInsigniaFragment_to_seleccionarAlumnoFragment"
+            app:destination="@id/seleccionarAlumnoFragment" />
+        <action
+            android:id="@+id/action_seleccionarInsigniaFragment_to_seleccionarActividadFragment"
+            app:destination="@id/seleccionarActividadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pantallaPrincipalAlumnoFragment"
+        android:name="com.example.proyectouja.PantallaPrincipalAlumnoFragment"
+        android:label="fragment_pantalla_principal_alumno"
+        tools:layout="@layout/fragment_pantalla_principal_alumno" >
+        <action
+            android:id="@+id/action_pantallaPrincipalAlumnoFragment_to_visualizarPerfilAlumnoFragment"
+            app:destination="@id/visualizarPerfilAlumnoFragment" />
+        <action
+            android:id="@+id/action_pantallaPrincipalAlumnoFragment_to_rankingFragment"
+            app:destination="@id/rankingFragment" />
+        <action
+            android:id="@+id/action_pantallaPrincipalAlumnoFragment_to_leerQRFragment"
+            app:destination="@id/leerQrFragment" />
+        <action
+            android:id="@+id/action_pantallaPrincipalAlumnoFragment_to_ajustesFragment"
+            app:destination="@id/ajustesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/crearQrFragment"
+        android:name="com.example.proyectouja.CrearQrFragment"
+        android:label="fragment_crear_qr"
+        tools:layout="@layout/fragment_crear_qr" >
+        <action
+            android:id="@+id/action_crearQrFragment_to_pantallaPrincipalProfesorFragment2"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/seleccionarAlumnoFragment"
+        android:name="com.example.proyectouja.SeleccionarAlumnoFragment"
+        android:label="fragment_seleccionar_alumno"
+        tools:layout="@layout/fragment_seleccionar_alumno" >
+        <action
+            android:id="@+id/action_seleccionarAlumnoFragment_to_seleccionarInsigniaFragment2"
+            app:destination="@id/seleccionarInsigniaFragment" />
+        <action
+            android:id="@+id/action_seleccionarAlumnoFragment_to_pantallaPrincipalProfesorFragment2"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ajustesFragment"
+        android:name="com.example.proyectouja.AjustesFragment"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" >
+        <action
+            android:id="@+id/action_ajustesFragment_to_cambiarContrasenaFragment"
+            app:destination="@id/cambiarContrasenaFragment" />
+        <action
+            android:id="@+id/action_ajustesFragment_to_pantallaPrincipalAlumnoFragment"
+            app:destination="@id/pantallaPrincipalAlumnoFragment" />
+        <action
+            android:id="@+id/action_ajustesFragment_to_pantallaPrincipalProfesorFragment"
+            app:destination="@id/pantallaPrincipalProfesorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cambiarContrasenaFragment"
+        android:name="com.example.proyectouja.CambiarContrasenaFragment"
+        android:label="fragment_cambiar_contrasena"
+        tools:layout="@layout/fragment_cambiar_contrasena" >
+        <action
+            android:id="@+id/action_cambiarContrasenaFragment_to_ajustesFragment"
+            app:destination="@id/ajustesFragment" />
+    </fragment>
+
+</navigation>
+
+
