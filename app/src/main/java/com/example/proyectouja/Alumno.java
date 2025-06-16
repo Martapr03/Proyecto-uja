@@ -15,10 +15,10 @@ public class Alumno {
 
     private List<String> insignias;
 
-    // 🔹 Constructor vacío: Obligatorio para Firebase
+    //Constructor vacío: Obligatorio para Firebase
     public Alumno() {}
 
-    // 🔹 Constructor completo (opcional, útil para pruebas locales)
+    //Constructor completo (opcional, útil para pruebas locales)
     public Alumno(String dni, String nombre, String primerApellido, String segundoApellido, String correo1,
                   String planDelAlumno, String nivel, int puntuacion, boolean seleccionado, List<String> insignias) {
         this.dni = dni;
@@ -33,7 +33,7 @@ public class Alumno {
         this.insignias = insignias;
     }
 
-    // 🔹 Getters y setters
+    //Getters y setters
     public String getDni() { return dni; }
     public void setDni(String dni) { this.dni = dni; }
 
@@ -64,7 +64,7 @@ public class Alumno {
     public List<String> getInsignias() { return insignias; }
     public void setInsignias(List<String> insignias) { this.insignias = insignias; }
 
-    // 🔹 Método útil para mostrar el "nivel" según puntuación
+    //Método útil para mostrar el "nivel" según puntuación
     public String obtenerNivel() {
         if (puntuacion <= 5) {
             return "Entrenador Novato";

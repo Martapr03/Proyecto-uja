@@ -36,7 +36,7 @@ public class CambiarContrasenaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // ✅ Inicializa Firebase correctamente con contexto
+        // Inicializa Firebase correctamente con contexto
         FirebaseApp.initializeApp(requireContext());
 
         View view = inflater.inflate(R.layout.fragment_cambiar_contrasena, container, false);
